@@ -1,4 +1,4 @@
-// dotenv gets the spotify id and secret from keys.js
+// dotenv brings in .env so keys.js can get the spotify id and secret from .env file
 require("dotenv").config();
 
 // fs brings in the readFile function to read random.txt
@@ -18,7 +18,7 @@ var Spotify = require('node-spotify-api');
 var spotify = new Spotify(keys.spotify);
 
 // action is used to store concert-this, spotify-this-song, movie-this, or do-what-it-says
-var action = process.argv[2].toLowerCase();
+var action = process.argv[2];
 
 // media is used to store the band, song, or movie
 var media = "";
